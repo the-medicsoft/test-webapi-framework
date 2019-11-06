@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "webapi-framework": "git+https://github.com/the-medicsoft/webapi-framework.git"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "dotenv": "^8.2.0",
+    "nodemon": "^1.19.4"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "seed:run": "cross-env SEED_OPTION=run node ./node_modules/webapi-framework/lib/seeders/seeder.js",
+    "seed:drop": "cross-env SEED_OPTION=drop node ./node_modules/webapi-framework/lib/seeders/seeder.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
