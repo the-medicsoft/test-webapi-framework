@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "@the-medicsoft/webapi-framework": "1.0.0"
+    "@the-medicsoft/webapi-framework": "1.0.1"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
@@ -13,8 +13,8 @@
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js",
-    "seed:run": "cross-env SEED_OPTION=run node ./node_modules/webapi-framework/lib/seeders/seeder.js",
-    "seed:drop": "cross-env SEED_OPTION=drop node ./node_modules/webapi-framework/lib/seeders/seeder.js"
+    "seed:run": "cross-env SEED_OPTION=run node ./node_modules/@the-medicsoft/webapi-framework/lib/seeders/seeder.js",
+    "seed:drop": "cross-env SEED_OPTION=drop node ./node_modules/@the-medicsoft/webapi-framework/lib/seeders/seeder.js"
   },
   "keywords": [],
   "author": "",

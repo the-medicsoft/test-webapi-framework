@@ -1,4 +1,4 @@
-const BaseModel = require("@the-medicsoft/webapi-framework/lib/models/BaseModel");
+const { BaseModel } = require("@the-medicsoft/webapi-framework");
 
 class PersonModel extends BaseModel {
   constructor() {

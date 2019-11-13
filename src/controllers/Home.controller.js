@@ -1,7 +1,7 @@
-const BaseController = require("@the-medicsoft/webapi-framework/lib/controllers/BaseController");
+const { BaseController } = require("@the-medicsoft/webapi-framework");
 
 // Models
-const Person = require("../models/Person");
+const Person = require("../models/Person.model");
 
 class HomeController extends BaseController {
   constructor() {
@@ -11,7 +11,6 @@ class HomeController extends BaseController {
   async greet(req, res) {
     try {
       const response = await new Person().read();
-      console.log(response);
 
       super.sendResponse({ req, res, response });
     } catch (err) {
