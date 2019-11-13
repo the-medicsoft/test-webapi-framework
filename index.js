@@ -1,5 +1,5 @@
-const { server } = require('webapi-framework')
+const { server } = require("@the-medicsoft/webapi-framework/config");
 
-require('./src/Routes/routes')(server);
+require("./src/routes/routes")(server);
 
 exports.server = server;

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "webapi-framework": "git+https://github.com/the-medicsoft/webapi-framework.git"
+    "@the-medicsoft/webapi-framework": "1.0.0"
   },
   "devDependencies": {
     "cross-env": "^6.0.3",
